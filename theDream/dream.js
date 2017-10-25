@@ -13,8 +13,8 @@ function play(movieId, cancelButton) {
     let playError;
     //cancelButton.addEventListener("click", function() { playError = "cancelled"});
     let result = [player.init(), loadMovie()];
-    return result.reduce( (acc, cur) => {
-        return Object.assign(acc, cur);
+    return result.reduce( (accumulator, current) => {
+        return Object.assign(accumulator, current);
     }, {});
 }
 
